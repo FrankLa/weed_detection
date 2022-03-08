@@ -34,7 +34,7 @@ import datetime
 import numpy as np
 import skimage.draw
 import cv2
-from mrcnn.visualize import display_instances
+
 import matplotlib.pyplot as plt
 
 # Root directory of the project
@@ -42,6 +42,7 @@ ROOT_DIR = os.path.abspath("../../")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
+from mrcnn.visualize import display_instances
 from mrcnn.config import Config
 from mrcnn import model as modellib, utils
 
